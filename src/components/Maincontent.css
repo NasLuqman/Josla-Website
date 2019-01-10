@@ -1,0 +1,154 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
+
+.banner{
+width:100%;
+  height:700px;
+	background-size:contain;
+	margin-top:-50px;
+	padding-left:0px;
+	padding-right:0px;
+  padding-top:100px;
+  background-position: 'center center no-repeat top center';
+  color:#fff;
+/*
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; */
+background-attachment: fixed;
+
+ /* background-image:url('image/banner6.jpg'); */
+}
+
+
+.header-text {
+    position: absolute;
+    top: 30%;
+    width: 96.66666666666666%;
+    color: #fff;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+}
+
+.banner h2 {
+    font-size: 35px;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+
+
+.banner p {
+  font-size: 20px;
+}
+
+.banner .btn{
+	color:#fff !important;
+	margin-top:50px;
+	border: none;
+  border-radius: 3em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 1em 2em;
+  width: auto;
+  font-weight:700;
+  background:#387A36 !important;
+
+
+  animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	//Firefox 1+
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	//Safari 3-4
+	-moz-animation-name: flash;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Firefox 1+
+@-webkit-keyframes flash {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Safari 3-4
+@-moz-keyframes flash {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+.banner .btn:hover{
+  background-color:#000 !important;
+  color:#fff !important;
+}
+
+/* Our Services*/
+.our-service{
+	padding:50px 0 40px;
+	text-align:center;
+}
+
+.our-service h2{
+  margin:20px 0 40px 20px;
+	font-size:170%;
+	font-weight:700px;
+}
+
+.our-service p{
+	text-align:center;
+	padding:5px;
+	margin:5px 0 5px 0;
+  font-size:18px;
+}
+
+
+/* Our Services End */
+@media(max-width:768px)
+{
+.banner h2 {
+  font-size:15px !important;
+}
+
+.banner h2{
+margin-left:10px !important;
+ }
+
+.banner p{
+font-size:12px !important;
+margin-top:0px !important;
+margin-bottom:10px;
+}
+
+.banner .btn{
+margin-top:5px !important;
+font-size: 0.5em !important;
+padding: 0.5em 1em !important;
+}
+
+.banner{
+  height:250px;
+}
+.header-text {
+    top: 5%;
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  .our-service{
+  	padding:10px 0 10px;
+}
+}
