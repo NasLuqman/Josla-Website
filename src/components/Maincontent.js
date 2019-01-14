@@ -1,36 +1,28 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Image, Button } from 'react-bootstrap';
-import './Maincontent.css'
+
 import home from './image/bgimage.jpg'
+import './Maincontent.css';
 
 class Maincontent extends Component {
   render() {
-    return (
-      <div>
-<div className="banner" style={{backgroundImage:'url("'+home+'")', backgroundRepeat:'no-repeat'}}>
-<div className="header-text">
-<h2>innovate &nbsp; | compute  &nbsp; | enginner </h2>
-<p>Our Vission is to find an intersection between digital innovation, cloud computing <br className="hidden-xs" />
-	and service engineering to deliver cognitive experiences.
-</p>
-<Button className="btn">Learn More</Button>
-</div>
-</div>
+    return(
+	<div>
+      <div className="landing">
+		<div className="home-wrap">
+			<div className="home-inner" style={{backgroundImage:'url("'+home+'")'}}>
 
-{/* Our Services section */}
+			</div>
+		</div>
+	  </div>
+	  <div className="caption text-center">
+			<h1>Welcome to Josla Technologies Solution</h1>
+			<h2>innovate &nbsp; | compute  &nbsp; | enginner </h2>
+			<p>Our Vission is to find an intersection between digital innovation, cloud computing <br className="hidden-xs" />
+				and service engineering to deliver cognitive experiences.</p>
+        <button className="btn btn-outline-light btn-lg">Learn More</button>
 
-<Grid className="our-service">
-  <Row>
-    <h2>Services</h2>
-    <Col xs={12} md={12}>
-    <p>We are well known for our driven mechanisms, we deliver <strong>SMART</strong> and intelligent services. <br/>
-		we propose unique services to help the average customer leverage today's technology to gain near future advantages.
-	</p>
-    </Col>
-  </Row>
-</Grid>
-
-</div>
+	  </div>
+	</div>
     );
   }
 }

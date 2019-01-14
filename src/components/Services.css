@@ -1,0 +1,93 @@
+.narrow{
+  width:75%;
+  margin:1.5rem auto;
+  padding-top:2rem;
+  text-align: center;
+}
+
+.narrow h2{
+	font-size:1.9rem;
+	font-weight:700;
+	text-transform:uppercase;
+	margin-bottom:.9rem;
+
+
+}
+.heading-underline{
+	width:3rem;
+	height:.2rem;
+	background-color:#009051;
+	margin:0 auto 2rem;
+}
+.cardall img{
+  width:100px;
+  height:70px;
+}
+.div-image{
+  text-align: center;
+}
+.cardall{
+  text-align: center;
+}
+.upper-card{
+	text-align:center;
+	border:solid 1px #000;
+		  padding-top:20px;
+  border-radius:5px;
+}
+.upper-card:hover{
+	-moz-box-shadow:0 0 5px 10px #888;
+	-webkit-box-shadow:0 0 5px 10px #888;
+	box-shadow:0 0 5px 10px #888;
+}
+.txt1 p{
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #0072BB;
+
+  margin-bottom: 10px;
+  padding:20px 5px 20px;
+}
+.txt2 p{
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  color:#793D6D;
+
+  margin-bottom: 10px;
+  padding:20px 5px 20px;
+}
+.txt3 p{
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #009051;
+  
+  margin-bottom: 10px;
+  padding:20px 5px 20px;
+}
+.txt1 .btn{
+  border-color:#0072BB;
+  color:#0072BB;
+}
+.txt1 .btn:hover{
+  background-color:#0072BB !important;
+  color:#fff;
+}
+.txt2 .btn{
+  border-color:#793D6D;
+  color:#793D6D;
+}
+.txt2 .btn:hover{
+  background-color:#793D6D !important;
+  color:#fff;
+}
+.txt3 .btn{
+  border-color:#009051;
+  color:#009051;
+}
+.txt3 .btn:hover{
+  background-color:#009051 !important;
+  color:#fff;
+}

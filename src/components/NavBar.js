@@ -1,42 +1,38 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootstrap';
 import './NavBar.css';
+
 
 class NavBar extends Component {
   render() {
     return (
+	<nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a className="navbar-brand"><img src="image/josla-icon-90.png" height="40px" weight="40px"/></a>
+		  <button className="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#navbarResponsive">
+		<span className="navbar-toggler-icon"></span>
+		</button>
+		<div className="collapse navbar-collapse" id="navbarResponsive">
+			<ul className="navbar-nav ml-auto" >
+				<li className="nav-item">
+					<a className="nav-link" href="#about">About</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="#service">Services</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="#team">Products</a>
+				</li>
+				<li className="nav-item">
+					<a className="nav-link" href="#Contact">Team</a>
+				</li>
+        <li className="nav-item">
+					<a className="nav-link" href="#Contact">Contact</a>
+				</li>
+			</ul>
+		</div>
 
-      <Navbar default fixedTop collapseOnSelect className="main-nav">
-  <Navbar.Header>
-    <Navbar.Brand>
-      <a href="#home"><Image src="image/josla-icon-90.png" height="40px" weight="40px"/></a>
-    </Navbar.Brand>
-    <Navbar.Toggle />
-  </Navbar.Header>
-  <Navbar.Collapse>
-  <Nav pullRight>
-    <NavItem eventKey={1} href="#">
-      About
-    </NavItem>
-    <NavItem eventKey={2} href="#">
-      Services
-    </NavItem>
-    <NavItem eventKey={2} href="#">
-      Products
-    </NavItem>
-    <NavItem eventKey={2} href="#">
-      Team
-    </NavItem>
-    <NavItem eventKey={2} href="#">
-      Blog
-    </NavItem>
-    <NavItem eventKey={2} href="#">
-      Contact Us
-    </NavItem>
-  </Nav>
-</Navbar.Collapse>
-</Navbar>
-    );
+	</nav>
+      );
   }
 }
 

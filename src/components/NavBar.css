@@ -1,22 +1,25 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
 
-.main-nav{
-  background:#fff;
+.navbar{
+
+	font-size:700;
+	font-weight:.9rem;
+	letter-spacing:.1rem;
+	background:white !important;
 }
-.navbar-default .navbar-nav>li>a{
-  color:green;
-  font-size:16px;
-  font-family:'Roboto', sans-serif;
+.navbar-nav li{
+	padding-right:.7rem;
 }
-.navbar-default .navbar-nav>li>a:hover{
-  color:#000;
+.navbar-dark .navbar-nav .nav-link{
+	color:green;
+	padding-top:.8rem;
+
 }
-.navbar-default .navbar-brand{
-color:green;
-font-weight:bolder;
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+	color:green;
 }
-.navbar-brand{
-  margin-top:0 !important;
-  padding-top:4px !important;
+.navbar-dark .navbar-toggler {
+  background-color:green;
 }

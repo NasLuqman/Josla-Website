@@ -1,154 +1,112 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
 
-.banner{
-width:100%;
-  height:700px;
-	background-size:contain;
-	margin-top:-50px;
-	padding-left:0px;
-	padding-right:0px;
-  padding-top:100px;
-  background-position: 'center center no-repeat top center';
-  color:#fff;
-/*
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover; */
-background-attachment: fixed;
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
 
- /* background-image:url('image/banner6.jpg'); */
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.caption{
+	width:100%;
+	max-width:100%;
+  top:38%;
+	position:absolute;
+	z-index:1;
+	color:white;
+}
+.caption h1{
+	font-size:2.8rem;
+	font-weight:700;
+	letter-spacing:.3rem;
+	text-shadow:.1rem .1rem .3rem black;
+	padding-bottom:1rem;
+
+}
+.caption h2{
+	font-size:2rem;
+	text-shadow:.1rem .1rem .5rem black;
+	padding-bottom:1.6rem;
+}
+.caption p{
+	font-size:1.2rem;
+  padding-bottom:1rem;
+}
+.btn-lg{
+	border-width:medium;
+	border-radius:0;
+	padding:.6rem 1.3rem;
+	font-size:1.1rem;
 }
 
 
-.header-text {
-    position: absolute;
-    top: 30%;
-    width: 96.66666666666666%;
-    color: #fff;
-    text-align: center;
-    font-family:'Roboto', sans-serif;
-}
-
-.banner h2 {
-    font-size: 35px;
-    font-weight:bold;
-    margin-bottom: 20px;
-}
-
-
-.banner p {
-  font-size: 20px;
-}
-
-.banner .btn{
-	color:#fff !important;
-	margin-top:50px;
-	border: none;
-  border-radius: 3em;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  display: inline-block;
-  font-size: 1.2em;
-  padding: 1em 2em;
-  width: auto;
-  font-weight:700;
-  background:#387A36 !important;
-
-
-  animation-name: flash;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-
-	//Firefox 1+
-	-webkit-animation-name: flash;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-
-	//Safari 3-4
-	-moz-animation-name: flash;
-	-moz-animation-duration: 1s;
-	-moz-animation-timing-function: linear;
-	-moz-animation-iteration-count: infinite;
-}
-
-@keyframes flash {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
-}
-
-//Firefox 1+
-@-webkit-keyframes flash {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
-}
-
-//Safari 3-4
-@-moz-keyframes flash {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1.0; }
-}
-
-.banner .btn:hover{
-  background-color:#000 !important;
-  color:#fff !important;
-}
-
-/* Our Services*/
-.our-service{
-	padding:50px 0 40px;
-	text-align:center;
-}
-
-.our-service h2{
-  margin:20px 0 40px 20px;
-	font-size:170%;
-	font-weight:700px;
-}
-
-.our-service p{
-	text-align:center;
-	padding:5px;
-	margin:5px 0 5px 0;
-  font-size:18px;
-}
-
-
-/* Our Services End */
 @media(max-width:768px)
 {
-.banner h2 {
-  font-size:15px !important;
-}
-
-.banner h2{
-margin-left:10px !important;
- }
-
-.banner p{
-font-size:12px !important;
-margin-top:0px !important;
-margin-bottom:10px;
-}
-
-.banner .btn{
-margin-top:5px !important;
-font-size: 0.5em !important;
-padding: 0.5em 1em !important;
-}
-
-.banner{
-  height:250px;
-}
-.header-text {
-    top: 5%;
-    margin-left: 10px;
-    margin-right:10px;
-  }
-  .our-service{
-  	padding:10px 0 10px;
+.caption{
+top:20%;
 }
 }
