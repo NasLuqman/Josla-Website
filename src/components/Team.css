@@ -106,7 +106,7 @@
 /* Service*/
 
 .single-service-two {
-    padding: 30px 20px 30px 100px;
+    padding: 30px 20px 10px 100px;
     position: relative;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -157,4 +157,17 @@
 .social-bookmark1 ul{
 
   padding-left: 0px;
+}
+.single-service-two .btn{
+  border: solid 1px #f39c12;
+  color: #f39c12;
+  background-color: #fff !important;
+  align-items: center;
+}
+.single-service-two .btndiv{
+  text-align: center;
+}
+
+.single-service-two h4{
+  text-align: center;
 }

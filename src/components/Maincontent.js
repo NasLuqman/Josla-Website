@@ -15,7 +15,7 @@ class Maincontent extends Component {
 		</div>
 	  </div>
 	  <div className="caption text-center">
-			<h1>innovate &nbsp; | compute  &nbsp; | engineer </h1>
+			<h1>Innovate &nbsp; | Compute  &nbsp; | Engineer </h1>
 			<p>Our vision is to find an intersection between digital innovation, cloud computing <br className="hidden-xs" />
 				and service engineering to deliver cognitive experiences.</p>
         <button className="btn btn-outline-light btn-lg">Learn More</button>

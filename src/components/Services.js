@@ -10,7 +10,7 @@ class Services extends Component {
               <div className="heading-underline"></div>
 
               <p>We are well known for our driven mechanisms, we deliver <strong>SMART</strong> and intelligent services.
-      		     we propose unique services to help the average customer leverage today's technology to gain near future advantages.
+      		     We propose unique services to help the average customer leverage today's technology to gain near future advantages.
       	       </p>
         </div>
 

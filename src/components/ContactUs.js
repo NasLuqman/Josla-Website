@@ -11,7 +11,7 @@ class ContactUs extends Component {
                 <div className="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <div className="area-title text-center">
                         <h3>GET IN TOUCH</h3>
-                        <p>Need any help jusct send a message via our email address</p>
+                        <p>Need any help just send a message via our email address</p>
                     </div>
                 </div>
             </div>
