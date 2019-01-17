@@ -23,3 +23,15 @@
 .navbar-dark .navbar-toggler {
   background-color:green;
 }
+.navbar-brand img{
+	margin-left:200px !important;
+}
+
+
+
+@media(max-width:768px)
+{
+	.navbar-brand img{
+		margin-left:20px !important;
+	}
+}

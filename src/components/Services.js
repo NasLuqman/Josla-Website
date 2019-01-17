@@ -4,7 +4,7 @@ import './Services.css';
 class Services extends Component {
   render() {
     return (
-      <div>
+      <div className="ourservice">
           <div className="col-12 narrow">
               <h2 className="heading">Our Services</h2>
               <div className="heading-underline"></div>

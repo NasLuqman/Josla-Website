@@ -53,7 +53,7 @@ class Team extends Component {
 
                 <div className="item carousel-item">
       						<div className="img-box"><img src="image/naasir.png" alt="developer"/></div>
-                  <p className="testimonial"><b>Nasisudeen Luqman</b>, Software developer</p>
+                  <p className="testimonial"><b>Nasirudeen Luqman</b>, Software developer</p>
                   <p className="overview">
                   <div className="social-bookmark1">
                       <ul>
@@ -81,7 +81,7 @@ class Team extends Component {
 
                 <div className="item carousel-item">
       						<div className="img-box"><img src="image/karina.png" alt="developer"/></div>
-                  <p className="testimonial"><b>Karina Igbosi</b>, Business develope</p>
+                  <p className="testimonial"><b>Karina Igbosi</b>, Business developer</p>
                   <p className="overview">
                   <div className="social-bookmark1">
                       <ul>
